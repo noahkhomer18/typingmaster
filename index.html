@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Typing Speed Test - Noah Khomer</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation Menu -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <i class="fas fa-keyboard"></i>
+                <span>TypingMaster</span>
+            </div>
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="#home" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#about" class="nav-link">About</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#features" class="nav-link">Features</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#contact" class="nav-link">Contact</a>
+                </li>
+            </ul>
+            <div class="nav-toggle">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container">
+        <!-- Header Section -->
+        <header class="header" id="home">
+            <div class="header-content">
+                <span class="topper">typing speed test</span>
+                <h1 class="title">Test Your Typing Skills</h1>
+                <p class="subtitle">Challenge yourself with a 1-minute typing test and see how fast you can type!</p>
+            </div>
+        </header>
+
+        <!-- Main Test Section -->
+        <main class="main-content">
+            <!-- Stats Display -->
+            <div class="stats-container" id="features">
+                <div class="stat-item">
+                    <span class="stat-label">Time</span>
+                    <span class="stat-value" id="timer">60s</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-label">WPM</span>
+                    <span class="stat-value" id="wpm">0</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-label">Accuracy</span>
+                    <span class="stat-value" id="accuracy">100%</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-label">Characters</span>
+                    <span class="stat-value" id="characters">0</span>
+                </div>
+            </div>
+
+            <!-- Test Area -->
+            <div class="test-area">
+                <div class="text-display" id="textDisplay">
+                    Click "Start Test" to begin your typing challenge!
+                </div>
+                
+                <div class="input-section">
+                    <textarea 
+                        id="typingInput" 
+                        placeholder="Start typing here..."
+                        disabled
+                        rows="4"
+                    ></textarea>
+                </div>
+
+                <!-- Control Buttons -->
+                <div class="button-group">
+                    <button id="startBtn" class="btn btn-primary">Start Test</button>
+                    <button id="resetBtn" class="btn btn-secondary" disabled>Reset</button>
+                </div>
+            </div>
+
+            <!-- Results Section -->
+            <div class="results-section" id="resultsSection" style="display: none;">
+                <h2>Test Results</h2>
+                <div class="results-grid">
+                    <div class="result-item">
+                        <h3>Words Per Minute</h3>
+                        <p id="finalWpm">0</p>
+                    </div>
+                    <div class="result-item">
+                        <h3>Accuracy</h3>
+                        <p id="finalAccuracy">100%</p>
+                    </div>
+                    <div class="result-item">
+                        <h3>Total Words</h3>
+                        <p id="finalWords">0</p>
+                    </div>
+                    <div class="result-item">
+                        <h3>Total Characters</h3>
+                        <p id="finalCharacters">0</p>
+                    </div>
+                </div>
+                <button id="newTestBtn" class="btn btn-primary">Take Another Test</button>
+            </div>
+
+            <!-- About Section -->
+            <section class="about-section" id="about">
+                <div class="about-content">
+                    <h2>Why I Built This Project</h2>
+                    <div class="about-grid">
+                        <div class="about-text">
+                            <p>
+                                Typing is a fundamental skill that's more important than ever in today's digital world. 
+                                We're not just competing with other people anymore – we're competing with AI and automation.
+                            </p>
+                            <p>
+                                Being able to type quickly and accurately is crucial for productivity, communication, and staying competitive 
+                                in an increasingly digital workforce. This project is my way of helping people develop this essential skill.
+                            </p>
+                            <p>
+                                Whether you're a student, professional, or just someone who wants to improve their typing speed, 
+                                this tool provides a fun and engaging way to practice and measure your progress.
+                            </p>
+                            <p>
+                                The future belongs to those who can adapt and upskill quickly. By mastering typing, you're not just 
+                                improving a basic skill – you're building a foundation for success in an AI-driven world.
+                            </p>
+                        </div>
+                        <div class="about-stats">
+                            <div class="stat-highlight">
+                                <i class="fas fa-rocket"></i>
+                                <h3>Speed Matters</h3>
+                                <p>Faster typing = More productivity</p>
+                            </div>
+                            <div class="stat-highlight">
+                                <i class="fas fa-bullseye"></i>
+                                <h3>Accuracy Counts</h3>
+                                <p>Precision over speed</p>
+                            </div>
+                            <div class="stat-highlight">
+                                <i class="fas fa-chart-line"></i>
+                                <h3>Track Progress</h3>
+                                <p>See your improvement over time</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <!-- Footer Section -->
+    <footer class="footer" id="contact">
+        <div class="footer-container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>About Me</h3>
+                    <p>Hi, I'm Noah Khomer! I'm passionate about creating tools that help people develop essential skills for the modern digital world.</p>
+                    <div class="social-links">
+                        <a href="https://github.com/noahkhomer18" target="_blank" class="social-link">
+                            <i class="fab fa-github"></i>
+                            <span>GitHub</span>
+                        </a>
+                        <a href="https://www.linkedin.com/in/noah-khomer-19a935342/" target="_blank" class="social-link">
+                            <i class="fab fa-linkedin"></i>
+                            <span>LinkedIn</span>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Project Motivation</h3>
+                    <p>In today's competitive landscape, we're not just competing with other people – we're competing with AI and automation. Upskilling and getting comfortable with essential digital skills like typing is crucial for staying relevant and competitive.</p>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul class="footer-links">
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#features">Features</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <div class="copyright">
+                    <p>Made with <i class="fas fa-heart heart-icon"></i> by Noah Khomer</p>
+                    <p class="copyright-text">&copy; 2025 Typing Speed Test. All rights reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

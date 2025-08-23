@@ -1,0 +1,36 @@
+{
+  "name": "typing-speed-test",
+  "version": "1.0.0",
+  "description": "A modern, dynamic typing speed test application with real-time WPM calculation and accuracy tracking",
+  "main": "index.html",
+  "scripts": {
+    "start": "python -m http.server 8000",
+    "dev": "python -m http.server 8000",
+    "serve": "python -m http.server 8000"
+  },
+  "keywords": [
+    "typing",
+    "speed-test",
+    "wpm",
+    "accuracy",
+    "javascript",
+    "html5",
+    "css3",
+    "web-app"
+  ],
+  "author": "Noah Khomer",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/noahkhomer18/typing-speed-test.git"
+  },
+  "bugs": {
+    "url": "https://github.com/noahkhomer18/typing-speed-test/issues"
+  },
+  "homepage": "https://github.com/noahkhomer18/typing-speed-test#readme",
+  "devDependencies": {},
+  "dependencies": {},
+  "engines": {
+    "node": ">=14.0.0"
+  }
+}
